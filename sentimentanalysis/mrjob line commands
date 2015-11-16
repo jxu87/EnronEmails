@@ -1,0 +1,1 @@
+ python mr-classifier.py -r emr 's3://chrisdailey1-enron/totallined/' --output-dir=s3://chrisdailey1-enron/output/classification/ --conf-path ./mrjob.conf

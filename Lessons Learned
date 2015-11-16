@@ -1,0 +1,7 @@
+Lessons learned
+
+1. S3 is very slow to load/download files.
+	It takes an order of magnitude longer to process to same number of files over S3 than locally.
+	This is not an issue when the files are concatenated.  Thus, file i/o is the bottleneck.
+2. Text processing is very fast once it's in memory.
+3. Interfacing directly with AWS Streaming is error-prone.  The same techniques that generate errors when passed directly to EMR run without problem in MR Job.
